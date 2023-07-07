@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product filter</title>
+    <link rel="stylesheet" href="filter.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="btn-group">
+            <button class="btn btn-active" data-filter="All">All</button>
+            <button class="btn" data-filter="cake">cake</button>
+            <button class="btn" data-filter="pizza">pizza</button>
+            <button class="btn" data-filter="coke">coke</button>
+        </div>
+
+       <div class="icon"> 
+        <input type="text" placeholder="search the food" id="search" >
+            <ion-icon name="search-circle-sharp"></ion-icon>  </div>
+    </div>
+    <div class="products">
+        
+        <div class="box" data-find="cake"><img src="images/cake1.jpg" ></div>
+        <div class="box" data-find="pizza"><img src="images/pizza1.jpg"></div>
+        <div class="box" data-find="coke"> <img src="images/coke1.jpg"></div>
+        <div class="box" data-find="cake"><img src="images/cake2.jpg" ></div>
+        <div class="box" data-find="pizza"><img src="images/pizza2.jpg"></div>
+        <div class="box" data-find="coke"> <img src="images/coke2.jpg"></div>
+    </div>
+<script src="filter.js">
+    
+</script>
+
+
+</body>
+
+</html>

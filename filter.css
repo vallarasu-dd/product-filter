@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    height: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+
+}
+.btn-group .btn{
+    height: 1.7rem;
+    width:4rem;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+.btn:hover,
+.btn-group .btn-active{
+    background-color: rgb(73, 104, 93);
+    color: white;
+}
+
+#search{
+    width:200px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid rgb(73, 104, 93);
+    color: black;
+    font-size: 0.8rem;
+    position: relative;
+
+}
+
+#search::placeholder{
+    color: rgb(104, 90, 71);
+}
+#search:hover::placeholder{
+    color:black;
+}
+
+.icon{
+    position: relative;
+}
+ion-icon{
+    font-size: 10px;
+
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 28px;
+    font-size: 25px;
+    
+}
+
+.products{
+    max-width: 1200px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    gap:30px;
+    justify-items: center;
+    margin-left: 100px;
+    
+   
+}
+.box img{
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    overflow: hidden;
+    border:5px solid rgb(223, 209, 209);
+    border-radius: 20px;
+}
+
+
+ .box:hover img{
+    transform:scale(1.2);
+}
+
+
+
